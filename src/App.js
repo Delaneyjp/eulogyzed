@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="App" >
+      <header className="App-header" style={titleStyle}>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Eulogyzd
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div style={descStyle}>
+          <p >
+            Take a moment to remember the ones we love...
+        </p>
+        </div>
       </header>
-    </div>
+    </div >
   );
 }
+
+const titleStyle = {
+  fontSize: 50,
+}
+const descStyle = {
+  fontSize: 10,
+  margin: -25
+}
+
 
 export default App;
