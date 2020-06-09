@@ -1,11 +1,13 @@
 import React from "react";
+import Nav from "../../components/nav"
+
 
 export default function Profilepage() {
     return (
         <div className="container-fluid">
             <div className="row">
                 <div className="col-12 text-center">
-                    <h1>Username</h1>
+                    <Nav />
                 </div>
             </div>
 
