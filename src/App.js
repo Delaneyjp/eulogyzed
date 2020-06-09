@@ -1,30 +1,16 @@
 import React from 'react';
 import './App.css';
+import { Router } from "react-router-dom";
+
+import history from "./services/history";
+import Routes from "./routes";
 
 function App() {
   return (
-    <div className="App" >
-      <header className="App-header" style={titleStyle}>
-        <p>
-          Eulogyzd
-        </p>
-        <div style={descStyle}>
-          <p >
-            Take a moment to remember the ones we love...
-        </p>
-        </div>
-      </header>
-    </div >
+    <Router history={history}>
+      <Routes />
+    </Router>
   );
 }
-
-const titleStyle = {
-  fontSize: 50,
-}
-const descStyle = {
-  fontSize: 10,
-  margin: -25
-}
-
 
 export default App;
