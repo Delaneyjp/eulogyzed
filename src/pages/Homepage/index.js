@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Homepage() {
     return (
-        <div className="App" >
-            <header className="App-header">
+        <div className="Homepage" >
+            <header className="Homepage-header">
                 <p>
                     Eulogyzd
           </p>
